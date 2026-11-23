@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Gestor de Tareas - Lab 08</title>
+    <style>
+        body { font-family: Arial, sans-serif; max-width: 500px; margin: 40px auto; }
+        form { display: flex; gap: 8px; margin-bottom: 20px; }
+        input, select, button { padding: 8px; }
+        li { display: flex; justify-content: space-between; align-items: center; padding: 8px; border-bottom: 1px solid #ccc; }
+        .btn-borrar { background: #e74c3c; color: white; border: none; cursor: pointer; border-radius: 4px; }
+    </style>
+</head>
+<body>
+    <h1>Mis Pendientes</h1>
+
+    <form id="formTarea">
+        <input type="text" id="inputTitulo" placeholder="Escribe una tarea..." required>
+        <select id="selectPrioridad">
+            <option value="Alta">Alta</option>
+            <option value="Media">Media</option>
+            <option value="Baja">Baja</option>
+        </select>
+        <button type="submit">Agregar</button>
+    </form>
+
+    <ul id="listaTareas"></ul>
+
+    <script src="app.js"></script>
+</body>
+</html>
