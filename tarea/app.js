@@ -11,6 +11,9 @@ class Tarea {
 }
 
 const listaTareas = document.querySelector("#listaTareas");
+const formTarea = document.querySelector("#formTarea");
+const inputTitulo = document.querySelector("#inputTitulo");
+const selectPrioridad = document.querySelector("#selectPrioridad");
 
 // Función para crear el elemento en el DOM junto con su botón de borrar
 function mostrarTarea(tareaObj) {
@@ -35,3 +38,13 @@ const t1 = new Tarea("Terminar laboratorio 08", "Alta");
 const t2 = new Tarea("Subir repositorio a GitHub", "Media");
 mostrarTarea(t1);
 mostrarTarea(t2);
+
+// Evento 2: submit para agregar nuevas tareas sin recargar la página
+formTarea.addEventListener("submit", (evento) => {
+    evento.preventDefault();
+    
+    const nuevaTarea = new Tarea(inputTitulo.value, selectPrioridad.value);
+    mostrarTarea(nuevaTarea);
+    
+    inputTitulo.value = "";
+});
