@@ -2,13 +2,12 @@
 
 Laboratorio 08: JavaScript Interactivo - DOM, Eventos y Objetos. Navegador usado: Chrome
 
-## Ejercicio 2: Seleccionar y modificar el DOM 
+## Ejercicio 2: Seleccionar y modificar el DOM
 
 | Instrucción | Qué cambió en la pantalla | Se mantiene al recargar (Sí/No) |
 |---|---|---|
 | textContent desde app.js | El texto del título `<h1>` cambió a "Hola TECSUP". | Sí, porque la instrucción está guardada en app.js y se ejecuta cada vez que se carga la página. |
 | style.color | El color del texto del título `<h1>` cambió a azul. | Sí, porque también está escrita en app.js y se vuelve a aplicar al recargar. |
-
 
 ## Ejercicio 3: Evento click
 
@@ -18,7 +17,9 @@ Laboratorio 08: JavaScript Interactivo - DOM, Eventos y Objetos. Navegador usado
 | dblclick | Hacer doble clic rápido con el mouse sobre el botón. | 1 (suma 1 por cada doble clic completo). |
 | mouseover | Pasar el cursor del mouse por encima del área del botón (sin hacer clic). | 1 (suma 1 cada vez que el puntero entra al botón). |
 
-evento.type mostró el nombre exacto de la acción ocurrida en formato de texto (por ejemplo, "click", "dblclick" o "mouseover"). Por su parte, evento.target devolvió la referencia completa al elemento HTML específico que recibió la acción, en este caso la etiqueta <button id="btnSumar">Sumar 1</button>.
+`evento.type` mostró el nombre del evento ocurrido como texto: "click", "dblclick" o "mouseover".
+
+`evento.target` mostró el elemento HTML que recibió la acción, en este caso el botón `<button id="btnSumar">Sumar 1</button>`.
 
 ## Ejercicio 4: Eventos input y submit
 
@@ -36,6 +37,4 @@ evento.type mostró el nombre exacto de la acción ocurrida en formato de texto 
 | laptop | "Laptop" | 2500 | 1875 |
 | mouse | "Mouse" | 45 | 33.75 |
 | teclado | "Teclado" | 120 | 90 |
-
-Usar una clase evita repetir código al estandarizar la estructura y los cálculos de cada producto desde un solo lugar. Además, permite escalar la página dinámicamente: al agregar nuevos objetos en JavaScript, el DOM se actualiza automáticamente sin tener que modificar el archivo HTML.
-
+| monitor |
