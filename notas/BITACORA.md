@@ -25,9 +25,9 @@ evento.type mostró el nombre exacto de la acción ocurrida en formato de texto 
 | Prueba | Que paso en la pantalla | Se recargo la pagina (Si/No) |
 |---|---|---|
 | Escribir en el campo nombre | El texto del saludo cambió en tiempo real letra por letra mostrando "Hola, Victoria". | No |
-| Enviar sin preventDefault | El formulario se envió de forma predeterminada y se perdieron/reiniciaron los cambios hechos en el DOM (como el título azul o los clics). | Sí |
-| Enviar con preventDefault, correo sin @ | Se detuvo el envío del formulario y apareció un mensaje de error o alerta indicando que el correo no es válido (falta el @). | No |
-| Enviar con preventDefault, correo con @ | Se detuvo el envío tradicional, se validó el correo correctamente y se mostró el mensaje de confirmación o envío exitoso en pantalla. | No |
+| Enviar sin preventDefault | El texto "Enviado" apareció un instante y desapareció; la página se recargó y el campo de correo quedó vacío. | Sí |
+| Enviar con preventDefault, correo sin @ | Apareció en rojo el mensaje "Correo no valido: falta @". | No |
+| Enviar con preventDefault, correo con @ | Apareció el mensaje "Enviado: victoria@tecsup.pe" y el texto se mantuvo en pantalla. | No |
 
 ## Ejercicio 5: Clases y objetos
 
